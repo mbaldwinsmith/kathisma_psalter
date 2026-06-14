@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../fonts/EBGaramond-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../fonts/EBGaramond-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../fonts/EBGaramond-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-body:    'EB Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  --font-display: 'EB Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+
+  /* Modular scale ~1.25 */
+  --text-xs:   clamp(0.75rem,  0.72rem + 0.15vw, 0.85rem);
+  --text-sm:   clamp(0.875rem, 0.84rem + 0.18vw, 1rem);
+  --text-base: clamp(1.05rem,  1rem    + 0.4vw,  1.2rem);
+  --text-md:   clamp(1.2rem,   1.15rem + 0.5vw,  1.45rem);
+  --text-lg:   clamp(1.4rem,   1.3rem  + 0.7vw,  1.8rem);
+  --text-xl:   clamp(1.75rem,  1.6rem  + 1vw,    2.25rem);
+  --text-2xl:  clamp(2rem,     1.8rem  + 1.4vw,  2.75rem);
+
+  --leading-tight:  1.25;
+  --leading-prose:  1.65;
+  --leading-loose:  1.9;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-prose);
+  color: var(--ink);
+  background: var(--bg);
+  hyphens: auto;
+  hanging-punctuation: first last;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "onum" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: var(--text-xl); line-height: var(--leading-tight); font-weight: 600; }
+h2 { font-size: var(--text-lg); line-height: var(--leading-tight); font-weight: 600; }
+h3 { font-size: var(--text-md); line-height: var(--leading-tight); font-weight: 400; }
+
+.psalm-number {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  line-height: 1;
+  font-feature-settings: "kern" 1, "liga" 1, "lnum" 1;
+}
+
+.psalm-alt-number {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  font-feature-settings: "kern" 1, "lnum" 1;
+}
+
+.psalm-title {
+  font-style: italic;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  line-height: var(--leading-prose);
+}
+
+.verse-number {
+  font-size: var(--text-xs);
+  color: var(--ink-muted);
+  font-feature-settings: "kern" 1, "lnum" 1;
+  line-height: 1;
+  user-select: none;
+}
+
+.doxology {
+  font-variant-caps: small-caps;
+  letter-spacing: 0.02em;
+}

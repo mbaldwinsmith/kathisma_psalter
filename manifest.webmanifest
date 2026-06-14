@@ -1,0 +1,30 @@
+{
+  "name": "Kathisma Psalter",
+  "short_name": "Psalter",
+  "description": "Read the complete Orthodox Psalter across 20 Kathismata and 60 Staseis. Offline-capable, mobile-first.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fdf6ed",
+  "theme_color": "#2c1a0e",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+:root {
+  /* Light theme (parchment) */
+  --bg:          #fdf6ed;
+  --bg-surface:  #f5ead8;
+  --ink:         #1c120a;
+  --ink-muted:   #7a5c3e;
+  --accent:      #8b6914;   /* liturgical gold */
+  --rule:        #c9a96e;
+  --border:      #d6bc96;
+  --top-bar-bg:  #2c1a0e;
+  --top-bar-ink: #f5ead8;
+
+  /* Spacing */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  1.75rem;
+  --space-xl:  2.5rem;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-mid:  250ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:          #1a1108;
+    --bg-surface:  #251a0d;
+    --ink:         #f0e4cc;
+    --ink-muted:   #a8896a;
+    --accent:      #c9a030;
+    --rule:        #6b4e1e;
+    --border:      #3d2b10;
+    --top-bar-bg:  #0f0a04;
+    --top-bar-ink: #f0e4cc;
+  }
+}
+
+[data-theme="light"] {
+  --bg:          #fdf6ed;
+  --bg-surface:  #f5ead8;
+  --ink:         #1c120a;
+  --ink-muted:   #7a5c3e;
+  --accent:      #8b6914;
+  --rule:        #c9a96e;
+  --border:      #d6bc96;
+  --top-bar-bg:  #2c1a0e;
+  --top-bar-ink: #f5ead8;
+}
+
+[data-theme="dark"] {
+  --bg:          #1a1108;
+  --bg-surface:  #251a0d;
+  --ink:         #f0e4cc;
+  --ink-muted:   #a8896a;
+  --accent:      #c9a030;
+  --rule:        #6b4e1e;
+  --border:      #3d2b10;
+  --top-bar-bg:  #0f0a04;
+  --top-bar-ink: #f0e4cc;
+}

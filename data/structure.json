@@ -1,0 +1,86 @@
+{
+  "staseis": [
+    { "kathisma": 1, "stasis": 1, "index": 1,  "psalms": [{"lxx":1},{"lxx":2},{"lxx":3}], "glory": true },
+    { "kathisma": 1, "stasis": 2, "index": 2,  "psalms": [{"lxx":4},{"lxx":5},{"lxx":6}], "glory": true },
+    { "kathisma": 1, "stasis": 3, "index": 3,  "psalms": [{"lxx":7},{"lxx":8}], "glory": true },
+
+    { "kathisma": 2, "stasis": 1, "index": 4,  "psalms": [{"lxx":9},{"lxx":10}], "glory": true },
+    { "kathisma": 2, "stasis": 2, "index": 5,  "psalms": [{"lxx":11},{"lxx":12},{"lxx":13}], "glory": true },
+    { "kathisma": 2, "stasis": 3, "index": 6,  "psalms": [{"lxx":14},{"lxx":15},{"lxx":16}], "glory": true },
+
+    { "kathisma": 3, "stasis": 1, "index": 7,  "psalms": [{"lxx":17}], "glory": true },
+    { "kathisma": 3, "stasis": 2, "index": 8,  "psalms": [{"lxx":18},{"lxx":19},{"lxx":20}], "glory": true },
+    { "kathisma": 3, "stasis": 3, "index": 9,  "psalms": [{"lxx":21},{"lxx":22},{"lxx":23}], "glory": true },
+
+    { "kathisma": 4, "stasis": 1, "index": 10, "psalms": [{"lxx":24},{"lxx":25},{"lxx":26}], "glory": true },
+    { "kathisma": 4, "stasis": 2, "index": 11, "psalms": [{"lxx":27},{"lxx":28},{"lxx":29}], "glory": true },
+    { "kathisma": 4, "stasis": 3, "index": 12, "psalms": [{"lxx":30},{"lxx":31}], "glory": true },
+
+    { "kathisma": 5, "stasis": 1, "index": 13, "psalms": [{"lxx":32},{"lxx":33}], "glory": true },
+    { "kathisma": 5, "stasis": 2, "index": 14, "psalms": [{"lxx":34},{"lxx":35}], "glory": true },
+    { "kathisma": 5, "stasis": 3, "index": 15, "psalms": [{"lxx":36}], "glory": true },
+
+    { "kathisma": 6, "stasis": 1, "index": 16, "psalms": [{"lxx":37},{"lxx":38},{"lxx":39}], "glory": true },
+    { "kathisma": 6, "stasis": 2, "index": 17, "psalms": [{"lxx":40},{"lxx":41},{"lxx":42}], "glory": true },
+    { "kathisma": 6, "stasis": 3, "index": 18, "psalms": [{"lxx":43},{"lxx":44},{"lxx":45}], "glory": true },
+
+    { "kathisma": 7, "stasis": 1, "index": 19, "psalms": [{"lxx":46},{"lxx":47},{"lxx":48}], "glory": true },
+    { "kathisma": 7, "stasis": 2, "index": 20, "psalms": [{"lxx":49},{"lxx":50}], "glory": true },
+    { "kathisma": 7, "stasis": 3, "index": 21, "psalms": [{"lxx":51},{"lxx":52},{"lxx":53},{"lxx":54}], "glory": true },
+
+    { "kathisma": 8, "stasis": 1, "index": 22, "psalms": [{"lxx":55},{"lxx":56},{"lxx":57}], "glory": true },
+    { "kathisma": 8, "stasis": 2, "index": 23, "psalms": [{"lxx":58},{"lxx":59},{"lxx":60}], "glory": true },
+    { "kathisma": 8, "stasis": 3, "index": 24, "psalms": [{"lxx":61},{"lxx":62},{"lxx":63}], "glory": true },
+
+    { "kathisma": 9, "stasis": 1, "index": 25, "psalms": [{"lxx":64},{"lxx":65},{"lxx":66}], "glory": true },
+    { "kathisma": 9, "stasis": 2, "index": 26, "psalms": [{"lxx":67}], "glory": true },
+    { "kathisma": 9, "stasis": 3, "index": 27, "psalms": [{"lxx":68},{"lxx":69}], "glory": true },
+
+    { "kathisma": 10, "stasis": 1, "index": 28, "psalms": [{"lxx":70},{"lxx":71}], "glory": true },
+    { "kathisma": 10, "stasis": 2, "index": 29, "psalms": [{"lxx":72},{"lxx":73}], "glory": true },
+    { "kathisma": 10, "stasis": 3, "index": 30, "psalms": [{"lxx":74},{"lxx":75},{"lxx":76}], "glory": true },
+
+    { "kathisma": 11, "stasis": 1, "index": 31, "psalms": [{"lxx":77}], "glory": true },
+    { "kathisma": 11, "stasis": 2, "index": 32, "psalms": [{"lxx":78},{"lxx":79},{"lxx":80}], "glory": true },
+    { "kathisma": 11, "stasis": 3, "index": 33, "psalms": [{"lxx":81},{"lxx":82},{"lxx":83},{"lxx":84}], "glory": true },
+
+    { "kathisma": 12, "stasis": 1, "index": 34, "psalms": [{"lxx":85},{"lxx":86},{"lxx":87}], "glory": true },
+    { "kathisma": 12, "stasis": 2, "index": 35, "psalms": [{"lxx":88}], "glory": true },
+    { "kathisma": 12, "stasis": 3, "index": 36, "psalms": [{"lxx":89},{"lxx":90}], "glory": true },
+
+    { "kathisma": 13, "stasis": 1, "index": 37, "psalms": [{"lxx":91},{"lxx":92},{"lxx":93}], "glory": true },
+    { "kathisma": 13, "stasis": 2, "index": 38, "psalms": [{"lxx":94},{"lxx":95},{"lxx":96}], "glory": true },
+    { "kathisma": 13, "stasis": 3, "index": 39, "psalms": [{"lxx":97},{"lxx":98},{"lxx":99},{"lxx":100}], "glory": true },
+
+    { "kathisma": 14, "stasis": 1, "index": 40, "psalms": [{"lxx":101},{"lxx":102}], "glory": true },
+    { "kathisma": 14, "stasis": 2, "index": 41, "psalms": [{"lxx":103}], "glory": true },
+    { "kathisma": 14, "stasis": 3, "index": 42, "psalms": [{"lxx":104}], "glory": true },
+
+    { "kathisma": 15, "stasis": 1, "index": 43, "psalms": [{"lxx":105}], "glory": true },
+    { "kathisma": 15, "stasis": 2, "index": 44, "psalms": [{"lxx":106}], "glory": true },
+    { "kathisma": 15, "stasis": 3, "index": 45, "psalms": [{"lxx":107},{"lxx":108}], "glory": true },
+
+    { "kathisma": 16, "stasis": 1, "index": 46, "psalms": [{"lxx":109},{"lxx":110},{"lxx":111}], "glory": true },
+    { "kathisma": 16, "stasis": 2, "index": 47, "psalms": [{"lxx":112},{"lxx":113},{"lxx":114}], "glory": true },
+    { "kathisma": 16, "stasis": 3, "index": 48, "psalms": [{"lxx":115},{"lxx":116},{"lxx":117}], "glory": true },
+
+    { "kathisma": 17, "stasis": 1, "index": 49, "psalms": [{"lxx":118,"fromVerse":1,"toVerse":72}], "glory": true },
+    { "kathisma": 17, "stasis": 2, "index": 50, "psalms": [{"lxx":118,"fromVerse":73,"toVerse":131}], "glory": true },
+    { "kathisma": 17, "stasis": 3, "index": 51, "psalms": [{"lxx":118,"fromVerse":132,"toVerse":176}], "glory": true },
+
+    { "kathisma": 18, "stasis": 1, "index": 52, "psalms": [{"lxx":119},{"lxx":120},{"lxx":121},{"lxx":122},{"lxx":123}], "glory": true },
+    { "kathisma": 18, "stasis": 2, "index": 53, "psalms": [{"lxx":124},{"lxx":125},{"lxx":126},{"lxx":127},{"lxx":128}], "glory": true },
+    { "kathisma": 18, "stasis": 3, "index": 54, "psalms": [{"lxx":129},{"lxx":130},{"lxx":131},{"lxx":132},{"lxx":133}], "glory": true },
+
+    { "kathisma": 19, "stasis": 1, "index": 55, "psalms": [{"lxx":134},{"lxx":135},{"lxx":136}], "glory": true },
+    { "kathisma": 19, "stasis": 2, "index": 56, "psalms": [{"lxx":137},{"lxx":138},{"lxx":139}], "glory": true },
+    { "kathisma": 19, "stasis": 3, "index": 57, "psalms": [{"lxx":140},{"lxx":141},{"lxx":142}], "glory": true },
+
+    { "kathisma": 20, "stasis": 1, "index": 58, "psalms": [{"lxx":143},{"lxx":144}], "glory": true },
+    { "kathisma": 20, "stasis": 2, "index": 59, "psalms": [{"lxx":145},{"lxx":146},{"lxx":147}], "glory": true },
+    { "kathisma": 20, "stasis": 3, "index": 60, "psalms": [{"lxx":148},{"lxx":149},{"lxx":150}], "glory": true }
+  ],
+  "appendix": [
+    { "lxx": 151, "note": "Psalm 151 is outside the numbered kathismata. It is a supernumerary psalm of David, attested in the Septuagint but without a Masoretic equivalent." }
+  ]
+}
