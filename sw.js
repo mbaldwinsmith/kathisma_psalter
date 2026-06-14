@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'psalter-v1';
+const CACHE_VERSION = 'psalter-v4';
 
 const PRECACHE = [
   './',

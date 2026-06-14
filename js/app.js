@@ -81,6 +81,7 @@ router.on('/', showHome);
 router.on('/read/:kathisma/:stasis', showReader);
 router.on('/plan', showPlan);
 router.on('/settings', showSettings);
+router.on('/psalm151', showPsalm151);
 
 async function transition(fn) {
   const main = document.getElementById('main');
@@ -120,7 +121,10 @@ async function showHome() {
         <div class="continue-card__progress">Stasis ${stasisData?.index ?? '?'} of 60 &middot; Cycle ${cycle}</div>
         <a class="btn-primary" href="#/read/${s.kathisma}/${s.stasis}">Open</a>
       </div>
-      <a href="#/plan" style="color:var(--accent);font-size:var(--text-sm);">View full reading plan</a>
+      <div style="display:flex;gap:var(--space-lg);flex-wrap:wrap;">
+        <a href="#/plan" style="color:var(--accent);font-size:var(--text-sm);">View full reading plan</a>
+        <a href="#/psalm151" style="color:var(--ink-muted);font-size:var(--text-sm);">Psalm 151 (appendix)</a>
+      </div>
     `;
 
     main.append(home);
@@ -228,7 +232,11 @@ async function showPlan() {
       container.append(row);
     }
 
-    main.append(container);
+    const appendixLink = document.createElement('a');
+    appendixLink.href = '#/psalm151';
+    appendixLink.style.cssText = 'display:block;margin-top:var(--space-md);color:var(--ink-muted);font-size:var(--text-sm);';
+    appendixLink.textContent = 'Psalm 151 (appendix)';
+    main.append(container, appendixLink);
   });
 }
 
@@ -344,6 +352,30 @@ async function showSettings() {
 
     settings.append(numGroup, themeGroup, fontGroup, alGroup, resetGroup);
     main.append(settings);
+  });
+}
+
+async function showPsalm151() {
+  render.setTitle('Psalm 151');
+  document.getElementById('reader-bar').hidden = true;
+  await transition(async () => {
+    const main = document.getElementById('main');
+    main.innerHTML = '';
+
+    const stasis = {
+      kathisma: null,
+      stasis: null,
+      index: null,
+      psalms: [{ lxx: 151 }],
+      glory: false,
+    };
+
+    const note = document.createElement('p');
+    note.style.cssText = 'font-size:var(--text-sm);color:var(--ink-muted);margin-bottom:var(--space-lg);max-width:65ch;margin-inline:auto;';
+    note.textContent = 'Psalm 151 is a supernumerary psalm found in the Septuagint but without a Masoretic equivalent. It stands outside the 20 Kathismata and 60-stasis cycle.';
+
+    const article = await render.renderStasis(stasis);
+    main.append(note, article);
   });
 }
 

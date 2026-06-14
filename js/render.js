@@ -39,21 +39,21 @@ function renderPsalmBlock(psalmData, fromVerse, toVerse, numbering) {
 
   const label = psalmLabel(psalmData.lxx, numbering);
 
-  const numEl = document.createElement('div');
+  const numEl = document.createElement('h2');
   numEl.className = 'psalm-number';
   numEl.textContent = `Psalm ${label.primary}`;
 
   header.append(numEl);
 
   if (label.secondary) {
-    const alt = document.createElement('div');
+    const alt = document.createElement('p');
     alt.className = 'psalm-alt-number';
     alt.textContent = label.secondary;
     header.append(alt);
   }
 
   if (psalmData.title) {
-    const title = document.createElement('div');
+    const title = document.createElement('p');
     title.className = 'psalm-title';
     title.textContent = psalmData.title;
     header.append(title);

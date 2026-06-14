@@ -62,15 +62,16 @@ function masoreticToLxx(mas) {
 // primarySystem: 'lxx' | 'masoretic'
 function psalmLabel(lxxNum, primarySystem) {
   const mas = lxxToMasoretic(lxxNum);
+  const differs = mas !== String(lxxNum);
   if (primarySystem === 'lxx') {
     return {
       primary: String(lxxNum),
-      secondary: mas ? `Masoretic ${mas}` : null,
+      secondary: (mas && differs) ? `Masoretic ${mas}` : null,
     };
   }
   return {
     primary: mas ? `${mas}` : String(lxxNum),
-    secondary: `LXX ${lxxNum}`,
+    secondary: differs ? `LXX ${lxxNum}` : null,
   };
 }
 
