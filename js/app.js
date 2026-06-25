@@ -76,6 +76,34 @@ window.addEventListener('keydown', e => {
   }
 });
 
+// Swipe navigation in reader
+const SWIPE_MIN_DISTANCE = 60;
+const SWIPE_MAX_DURATION = 600;
+let _touchStartX = 0;
+let _touchStartY = 0;
+let _touchStartTime = 0;
+
+window.addEventListener('touchstart', e => {
+  if (!location.hash.startsWith('#/read/')) return;
+  const t = e.changedTouches[0];
+  _touchStartX = t.screenX;
+  _touchStartY = t.screenY;
+  _touchStartTime = Date.now();
+}, { passive: true });
+
+window.addEventListener('touchend', e => {
+  if (!location.hash.startsWith('#/read/')) return;
+  const t = e.changedTouches[0];
+  const dx = t.screenX - _touchStartX;
+  const dy = t.screenY - _touchStartY;
+  const dt = Date.now() - _touchStartTime;
+  if (dt > SWIPE_MAX_DURATION) return;
+  if (Math.abs(dx) < SWIPE_MIN_DISTANCE) return;
+  if (Math.abs(dx) < Math.abs(dy)) return; // mostly vertical, ignore
+  if (dx < 0) document.getElementById('btn-next')?.click();
+  else document.getElementById('btn-prev')?.click();
+}, { passive: true });
+
 // Routing
 router.on('/', showHome);
 router.on('/read/:kathisma/:stasis', showReader);
